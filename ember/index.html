@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://system.devshop.build/project/dogblog -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dogblog | DevShop</title>
+
+  <link type="text/css" rel="stylesheet" media="all" href="./index_files/admin_menu.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/node.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/defaults.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/system.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/system-menus.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/user.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/ctools.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/hosting_client.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/hosting.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/views.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/devshop.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/devshop-style.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" media="all" href="./index_files/boots.css">
+
+<link rel="shortcut icon" href="./index_files/favicon.ico" type="image/x-icon">
+<body>
+
+<div id="navbar-main" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://system.devshop.build/"><b class="text-primary">DevShop</b></a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+              <li class=""><a href="http://system.devshop.build/projects">Projects</a> </li>
+              <li class=""><a href="http://system.devshop.build/hosting/servers">Servers</a> </li>
+              <li class=""><a href="http://system.devshop.build/admin/user">People</a> </li>
+              <li>
+              <div class="task-list btn-group">
+      <button type="button" class="btn btn-link task-list-button dropdown-toggle " data-toggle="dropdown" title="Task Logs">
+        <span class="count"></span>
+        <i class="fa fa-gear"></i>
+      </button>
+      <ul class="devshop-tasks dropdown-menu dropdown-menu-left" role="menu"><li class="tasks first last"><div class="list-group"><a href="http://system.devshop.build/hosting/queues/tasks" class="list-group-item"><i class="fa fa-list-alt"></i> Task Logs</a>
+<a href="http://system.devshop.build/node/898" class="list-group-item list-group-item-success" id="task--"><i class="fa fa-check text-success"></i> Verify Project: build <small class="task-ago btn-block">2 min 4 sec ago</small></a>
+<a href="http://system.devshop.build/node/435" class="list-group-item list-group-item-success" id="task--"><i class="fa fa-check text-success"></i> Verify Project: build <small class="task-ago btn-block">2 min 11 sec ago</small></a>
+<a href="http://system.devshop.build/node/899" class="list-group-item list-group-item-success" id="task-build-branch_drupal_updates"><i class="fa fa-check"></i> Verify: branch-drupal-updates.build.devshop.build <small class="task-ago btn-block">3 min ago</small></a>
+<a href="http://system.devshop.build/node/897" class="list-group-item list-group-item-success" id="task-build-branch_drupal_updates"><i class="fa fa-check text-success"></i> Import: branch-drupal-updates.build.devshop.build <small class="task-ago btn-block">2 min 47 sec ago</small></a>
+<a href="http://system.devshop.build/node/457" class="list-group-item list-group-item-success" id="task-build-live"><i class="fa fa-check"></i> Verify: live.build.devshop.build <small class="task-ago btn-block">4 min ago</small></a>
+<a href="http://system.devshop.build/node/744" class="list-group-item list-group-item-success" id="task-build-live"><i class="fa fa-check text-success"></i> Clone: live.build.devshop.build <small class="task-ago btn-block">3 min 26 sec ago</small></a>
+<a href="http://system.devshop.build/node/895" class="list-group-item list-group-item-success" id="task-build-branch_drupal_updates"><i class="fa fa-check text-success"></i> Verify: build_branch_drupal_updates <small class="task-ago btn-block">4 min 28 sec ago</small></a>
+<a href="http://system.devshop.build/node/893" class="list-group-item list-group-item-success" id="task-build-live"><i class="fa fa-check text-success"></i> Backup: live.build.devshop.build <small class="task-ago btn-block">56 min 58 sec ago</small></a>
+<a href="http://system.devshop.build/node/849" class="list-group-item list-group-item-success" id="task-build-test"><i class="fa fa-check"></i> Verify: build_test <small class="task-ago btn-block">59 min ago</small></a>
+<a href="http://system.devshop.build/node/437" class="list-group-item list-group-item-success" id="task-build-live"><i class="fa fa-check text-success"></i> Verify: build_live <small class="task-ago btn-block">59 min 21 sec ago</small></a></div></li>
+</ul>
+    </div>        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+              <li class=""><a href="http://system.devshop.build/logout">Log out</a> </li>
+              <li class=""><a href="http://system.devshop.build/user/3">My account</a> </li>
+          </ul>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="main col-md-6">
+            <h1>
+        <a href="./index_files/index.html" class="active">dogblog</a>                  <small>Project</small>
+              </h1>
+          </div>
+  </div>
+  <div class="row">
+    <div class="pre-content col-md-12">
+
+      
+      <div id="block-devshop_projects-project_nav" class="block block-devshop_projects">
+
+  <div class="content">
+    
+<nav class="navbar navbar-default navbar-project" role="navigation">
+  <div class="container-fluid">
+    <!-- First Links -->
+    <div class="nav navbar-text main-project-nav">
+      <ul class="nav nav-pills">
+
+        <!-- Dashboard -->
+        <li><a href="./index_files/index.html" class="active"><i class="fa fa-cubes"></i> Dashboard</a></li>
+
+                <!-- Settings -->
+        <li class="dropdown">
+          <a href="http://system.devshop.build/project/dogblog#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+            <i class="fa fa-sliders"></i>
+            Settings            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu dropdown-settings" role="menu">
+                        <li><a href="http://system.devshop.build/node/644/edit">Project Settings</a></li>
+                <li class="divider"></li>
+            
+            <li><label>Environment Settings</label></li>
+                        <li>
+              <a href="http://system.devshop.build/node/644/edit/live">live</a>            </li>
+                      </ul>
+        </li>
+        
+        <!-- Logs-->
+        <li class="dropdown">
+          <a href="http://system.devshop.build/project/dogblog#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">
+            <i class="fa fa-list-alt"></i>
+            Logs            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><label>Environment Logs</label></li>
+                          <li>
+                <a href="http://system.devshop.build/node/644/logs/live">live</a>              </li>
+                      </ul>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Git Info -->
+    <div class="navbar-form navbar-right form-group">
+
+
+      <div class="input-group">
+
+        <!-- Link to github or an icon -->
+                  <a class="input-group-addon github-button" href="http://github.com/jonpugh/dogblog" title="View on GitHub" target="_blank"><i class="fa fa-github"></i></a>
+        
+
+        <!-- Git URL -->
+        <input type="text" class="form-control" size="26" value="git@github.com:jonpugh/dogblog.git" onclick="this.select()">
+
+        <!-- Branch & Tag List -->
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" title="3 Branches &amp; 3 Tags">
+
+                          <small>
+                <i class="fa fa-code-fork"></i> 3              </small>
+
+              &nbsp;
+                              <small>
+                  <i class="fa fa-tag"></i> 3                </small>
+              
+            
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/dev-jon"><i class="fa fa-code-fork"></i> dev-jon </a></li>
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/dev-tests"><i class="fa fa-code-fork"></i> dev-tests </a></li>
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/master"><i class="fa fa-code-fork"></i> master </a></li>
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/v1"><i class="fa fa-tag"></i> v1 </a></li>
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/v2"><i class="fa fa-tag"></i> v2 </a></li>
+                          <li><a href="http://github.com/jonpugh/dogblog/tree/v3"><i class="fa fa-tag"></i> v3 </a></li>
+                      </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+  </div>
+</div>
+
+          </div>
+  </div>
+  <div class="row">
+          <div class="main
+        col-xs-12        col-sm-12        col-md-12
+         container-fluid">
+          
+                    
+<!-- STATUS/INFO -->
+<div id="project-info">
+  <ul class="list-inline">
+        <li>
+      <strong>Install Profile</strong>
+      <small>standard</small>
+    </li>
+
+    <!-- Drush Info -->
+    <li class="pull-right">
+      <button type="button" class="btn btn-xs btn-link text-muted" data-toggle="modal" data-target="#drush-alias-modal" title="Drush Aliases">
+        <i class="fa fa-drupal"></i>
+        Drush      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="drush-alias-modal" tabindex="-1" role="dialog" aria-labelledby="drush-alias-modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="drush-alias-modal">Project Drush Aliases</h4>
+            </div>
+            <div class="modal-body">
+
+              <!-- Download button -->
+              <p>
+                <a href="http://system.devshop.build/node/644/aliases" class="btn btn-primary">Download Alias File</a> or copy to <code>~/.drush/dogblog.aliases.drushrc.php</code>.
+              </p>
+
+              <textarea cols="40" rows="10" class="form-control" onlick="this.select()">&lt;?php
+$aliases['live'] = array(
+  'root' =&gt; '/var/aegir/projects/dogblog/live',
+  'uri' =&gt; 'live.dogblog.system.devshop.build',
+  'remote-user' =&gt; 'aegir',
+  'remote-host' =&gt; 'system.devshop.build',
+  'path-aliases' =&gt; array(
+    '%files' =&gt; 'sites/live.dogblog.system.devshop.build/files',
+  ),
+);
+</textarea>
+
+              <p>
+                NOTE: To access these environments with drush remotely, make sure you have uploaded your public SSH key under <a href="http://system.devshop.build/user/3/ssh-keys">My Account &gt; SSH Keys</a>.              </p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+            <!-- Webhook -->
+        
+
+      <strong>Last Commit</strong>
+          <small>
+                      <!-- Last Received -->
+            <span title="Last webhook receieved.">18 weeks 6 days ago</span>
+                    </small>
+
+            </li>
+
+    <!-- Webhook -->
+          <li class="pull-right">
+            <a href="http://system.devshop.build/project/dogblog#" data-toggle="modal" class="btn btn-xs text-muted" data-target="#webhook-modal" title="Webhook URL">
+              <i class="fa fa-chain"></i> Webhook URL
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="webhook-modal" tabindex="-1" role="dialog" aria-labelledby="webhook-modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="drush-alias-modal">Webhook for project <em>dogblog</em></h4>
+                  </div>
+                  <div class="modal-body">
+                  <p>
+                    Deploy code to your environments with an incoming webhook with the following URL:
+                  </p>
+                  <p><input class="form-control" value="http://system.devshop.build/webhook/dogblog/697a722160524f5e4b47a9682aa90a54" onclick="this.select()"></p>
+                  <p>
+                    GitHub will ping this URL after each code push to keep the servers up to date, and can create environments on Pull Request.
+                  </p>
+                  <p>
+                    Copy the link above, then click the link below to go to the webhooks page for this project.
+                  </p>
+                  <p>
+                    DevShop only has support for Push and Pull Request events.  Set content type to <em>application/json</em>.
+                  </p>
+                  <a href="http://github.com/jonpugh/dogblog/settings/hooks" class="btn btn-primary" target="_blank">Manage Webhooks at GitHub.com</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div></li>
+        
+  </ul>
+</div>
+
+      <div class="alert alert-warning">
+      <i class="fa fa-exclamation-triangle"></i>      No deploy hooks are configured for this project. If new code is deployed, you will have to run update.php manually. Check your <a href="http://system.devshop.build/node/644/edit">Project Settings</a>.    </div>
+  
+<!-- ENVIRONMENTS-->
+<div class="row">
+
+    {{#each project in model}}
+
+    <div class="environment-wrapper col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="list-group environment  live-environment task-success" id="dogblog-live">
+
+        <!-- Environment Settings & Task Links -->
+    <div class="environment-dropdowns">
+        <div class="environment-tasks btn-group ">
+            <button type="button" class="btn btn-link task-list-button dropdown-toggle" data-toggle="dropdown" title="Environment Settings &amp; Actions">
+                <i class="fa fa-sliders"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right"><li class="first"><a href="http://system.devshop.build/node/644/edit/live"><i class="fa fa-sliders"></i> Environment Settings</a></li>
+<li><div class="divider"></div></li>
+<li><a href="http://system.devshop.build/hosting/c/live.dogblog.system.devshop.build"><i class="fa fa-globe"></i> Aegir Site</a></li>
+<li><a href="http://system.devshop.build/hosting/c/platform_dogblog_live"><i class="fa fa-code"></i> Aegir Platform</a></li>
+<li><div class="divider"></div></li>
+<li>      <a href="http://system.devshop.build/node/660/site_download?token=67534d791257724061d54605f473544d">
+            <i class="fa fa-download" "=""></i> Download Modules
+      </a></li>
+<li><a href="http://system.devshop.build/node/644/project_devshop-create/clone/660"><i class="fa fa-copy"></i> Clone Environment</a></li>
+<li><a href="http://system.devshop.build/node/644/project_devshop-create/fork/660"><i class="fa fa-code-fork"></i> Fork Environment</a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_disable?token=67534d791257724061d54605f473544d">
+             <i class="fa fa-power-off"></i> Disable Environment
+      </a></li>
+<li><div class="divider"></div></li>
+<li>      <a href="http://system.devshop.build/node/660/site_verify?token=67534d791257724061d54605f473544d">
+             Verify
+      </a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_flush_cache?token=67534d791257724061d54605f473544d">
+             Flush all caches
+      </a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_rebuild_registry?token=67534d791257724061d54605f473544d">
+             Rebuild registry
+      </a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_run_cron?token=67534d791257724061d54605f473544d">
+             Run cron
+      </a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_update?token=67534d791257724061d54605f473544d">
+             Run db updates
+      </a></li>
+<li><div class="divider"></div></li>
+<li>      <a href="http://system.devshop.build/node/660/site_backup?token=67534d791257724061d54605f473544d">
+             Backup
+      </a></li>
+<li>      <a href="http://system.devshop.build/node/660/site_restore?token=67534d791257724061d54605f473544d">
+             Restore
+      </a></li>
+<li class="last">      <a href="http://system.devshop.build/node/660/site_test?token=67534d791257724061d54605f473544d">
+             Run Tests
+      </a></li>
+</ul>        </div>
+    </div>
+    
+    <div class="environment-header list-group-item list-group-item-info">
+
+      
+      <!-- Environment Name -->
+        <a href="http://system.devshop.build/hosting/c/live.dogblog.system.devshop.build" class="environment-link" title="Environment: {{todo.title}}">
+            {{todo.title}}</a>
+
+        <a href="http://github.com/jonpugh/dogblog/tree/v3" class="environment-meta-data environment-git-ref btn btn-text" target="_blank" title="Git tag: v3">
+            <i class="fa fa-tag"></i>v3        </a>
+
+                    <a href="http://system.devshop.build/hosting/c/platform_dogblog_live" title="Drupal version 7.39" class="environment-meta-data environment-drupal-version btn btn-text">
+                <i class="fa fa-drupal"></i>7.39            </a>
+        
+        
+        <!-- Environment Status Indicators -->
+        <div class="environment-indicators">
+            
+                            <span class="environment-meta-data text-muted" title="This is the live environment.">
+            <i class="fa fa-bolt"></i>Live
+          </span>
+            
+        </div>
+
+      
+    </div>
+
+    <!-- Environment Warnings -->
+    
+    
+        <!-- URLs -->
+        <div class="environment-domains list-group-item login-available">
+
+            <div class="btn-toolbar" role="toolbar">
+
+                
+                                            <div class="btn-group btn-group-smaller btn-urls-single" role="group">
+                            <a href="http://live.dogblog.system.devshop.build/" target="_blank">
+                                                                    <i class="fa fa-globe"></i>
+                                                                http://live.dogblog.system.devshop.build                            </a>
+                        </div>
+                    
+                
+                <!-- Log In Link -->
+                                    <div class="btn-group btn-group-smaller pull-right login-link" role="group">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#loginModal-live" data-remote="/devshop/login/reset/660">
+                                <i class="fa fa-sign-in"></i>
+                                Log in                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="loginModal-live" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel-live">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <h4 class="modal-title" id="loginModalLabel-live">
+                                                Log in                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <i class="fa fa-gear fa-spin"></i>
+                                            Requesting new log in link. Please wait...                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                            </div>
+
+        </div>
+
+        <div class="list-group-item">
+            <div class="btn-group" role="group">
+
+                <!-- Last Commit -->
+                <a href="http://system.devshop.build/node/660/logs/commits" class="btn btn-text text-muted small" title="780ea20 Jon Pugh 4 months ago Merge pull request #2 from thinkdrop/dev-tests">
+                    <i class="fa fa-file-code-o"></i>
+                    4 months ago                </a>
+
+                <!-- Browse Files -->
+                <a href="http://system.devshop.build/node/660/files/platform" class="btn btn-text text-muted small" title="Browse the files in this environment">
+                    <i class="fa fa-folder-o"></i>
+                    Files                </a>
+
+                <!-- Browse Backups -->
+                <a href="http://system.devshop.build/node/660/backups" class="btn btn-text text-muted small" title="Create a view backups.">
+                    <i class="fa fa-database"></i>
+                    Backups                </a>
+            </div>
+        </div>
+                    <div class="environment-deploy list-group-item">
+
+                <!-- Deploy -->
+                <label>Deploy</label>
+                <div class="btn-group btn-toolbar" role="toolbar">
+
+                                            <!-- Deploy: Code -->
+                        <div class="btn-group btn-deploy-code" role="group">
+                            <button type="button" class="btn btn-default dropdown-toggle btn-git-ref" data-toggle="dropdown"><i class="fa fa-code"></i>
+                                Code                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu btn-git-ref" role="menu">
+                                <li><label>Deploy branch or tag</label></li>
+                                                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=dev-jon">
+        <i class="fa fa-code-fork"></i>
+        dev-jon
+      </a>                                        </li>
+                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=dev-tests">
+        <i class="fa fa-code-fork"></i>
+        dev-tests
+      </a>                                        </li>
+                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=master">
+        <i class="fa fa-code-fork"></i>
+        master
+      </a>                                        </li>
+                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=v1">
+        <i class="fa fa-tag"></i>
+        v1
+      </a>                                        </li>
+                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=v2">
+        <i class="fa fa-tag"></i>
+        v2
+      </a>                                        </li>
+                                                                            <li>
+                                            <a href="http://system.devshop.build/node/660/site_devshop-deploy?git_ref=v3">
+        <i class="fa fa-tag"></i>
+        v3
+      </a>                                        </li>
+                                                                                                </ul>
+                        </div>
+                    
+                                            <!-- Deploy: Data -->
+                        <div class="btn-group btn-deploy-database" role="group">
+
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-database"></i>
+                                Data                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                                                    <li><label>Deploy data from</label></li>
+                                                                                                                                                                            </ul>
+                        </div>
+                    
+
+                                            <!-- Deploy: Stack -->
+                        <div class="btn-group btn-deploy-servers" role="group">
+
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i>
+                                Stack                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu devshop-stack" role="menu">
+                                <li><label>IP Address</label></li>
+                                                                    <li class="text">
+                                        127.0.1.1                                    </li>
+                                                                    <li class="text">
+                                        104.131.35.100                                    </li>
+                                
+                                <li><label>Servers</label></li>
+                                                                    <li class="inline">
+                                        <a href="http://system.devshop.build/hosting/c/server_master" title="http: system.devshop.build">
+                                            <strong class="btn-block"><i class="fa fa-cube"></i> http</strong>
+                                            <small>system.devshop.build</small>
+                                        </a>
+                                                                                    <a href="http://system.devshop.build/node/658/edit?destination=node%2F644&deploy=stack" title="Change http server..."><i class="fa fa-angle-right"></i></a>
+                                                                            </li>
+                                                                    <li class="inline">
+                                        <a href="http://system.devshop.build/project/server_localhost" title="db: localhost">
+                                            <strong class="btn-block"><i class="fa fa-database"></i> db</strong>
+                                            <small>localhost</small>
+                                        </a>
+                                                                                    <a href="http://system.devshop.build/node/660/site_migrate?destination=node%2F644&deploy=stack" title="Change db server..."><i class="fa fa-angle-right"></i></a>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                                    </div>
+            </div>
+        
+        
+    <div class="environment-task-logs list-group-item">
+                <!-- Tasks -->
+        <div class="alert-success">
+
+
+                <label>Tasks</label>
+            <div class="btn-group btn-logs pull-right" role="group">
+                <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-list-alt"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="http://system.devshop.build/node/644/logs/live" class="list-group-item"><i class="fa fa-list"></i> Task Logs</a>
+<a href="http://system.devshop.build/node/659/revisions/2534/view" class="list-group-item list-group-item-success"><i class="fa fa-check"></i> Verify <span class="small">Successful</span> <em class="small pull-right"><i class="fa fa-calendar"></i> 6 weeks ago</em></a>
+<a href="http://system.devshop.build/node/702/revisions/1861/view" class="list-group-item list-group-item-success"><i class="fa fa-check"></i> Run Tests <span class="small">Successful</span> <em class="small pull-right"><i class="fa fa-calendar"></i> 18 weeks ago</em></a>
+<a href="http://system.devshop.build/node/667/revisions/1856/view" class="list-group-item list-group-item-success"><i class="fa fa-check"></i> Deploy <span class="small">Successful</span> <em class="small pull-right"><i class="fa fa-calendar"></i> 18 weeks ago</em></a>
+<a href="http://system.devshop.build/node/680/revisions/1815/view" class="list-group-item list-group-item-success"><i class="fa fa-check"></i> Verify <span class="small">Successful</span> <em class="small pull-right"><i class="fa fa-calendar"></i> 18 weeks ago</em></a>
+<a href="http://system.devshop.build/node/679/revisions/1809/view" class="list-group-item list-group-item-success"><i class="fa fa-check"></i> Clone <span class="small">Successful</span> <em class="small pull-right"><i class="fa fa-calendar"></i> 18 weeks ago</em></a>                </div>
+            </div>
+            <div class="btn-group text">
+                <a href="http://system.devshop.build/node/702" class="alert-link">
+                    <i class="fa fa-check"></i>
+                    <span class="type-name">Run Tests</span>
+                    <span class="status-name small">Successful</span>
+                      &nbsp;
+                    <em class="small"><i class="ago-icon fa fa-calendar"></i> <span class="ago">18 weeks ago</span></em>
+                </a>
+            </div>
+        </div>
+        
+        <span class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <span class="sr-only"></span>
+            </div>
+        </span>
+    </div>
+</div>
+
+        </div>
+
+    {{/each}}
+    
+    <div class="placeholder add-project-button col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <a href="http://system.devshop.build/node/644/project_devshop-create" class="btn btn-lg btn-success">
+      <i class="fa fa-plus-square"></i><br>
+      Create New Environment</a>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="footer">
+    <div class="footer-message"></div>
+  </div>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+<script src="http://builds.emberjs.com/tags/v1.8.1/ember.js"></script>
+<script src="http://builds.emberjs.com/tags/v1.0.0-beta.11/ember-data.js"></script>
+
+<!-- ... Ember.js and other javascript dependencies ... -->
+<script src="js/application.js"></script>
+<script src="js/router.js"></script>
+<script src="models/project.js"></script>
+
+
+</body></html>
