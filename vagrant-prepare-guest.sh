@@ -16,3 +16,16 @@ elif [ -f '/etc/init.d/nginx' ]; then
 fi
 
 sudo ln -s /vagrant /usr/share/devshop
+
+# Setup docker
+sudo su -c "wget -qO- https://get.docker.com/ | sh"
+
+# Add aegir to docker group
+ sudo usermod -aG docker aegir
+ 
+# Launch Rancher server
+docker run -d --restart=always -p 8080:8080 rancher/server
+
+# Pull rancher agent container so it's ready to launch
+docker pull rancher/agent:v0.7.9
+
